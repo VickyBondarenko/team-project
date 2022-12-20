@@ -23,7 +23,7 @@
     border-color: var(--btn-disabled-color);
   }
 
-  @include dextop {
+  @include desktop {
     border-radius: 10px;
     padding: 12px 34px;
     @include font(600, 14px, 1.29, null);
