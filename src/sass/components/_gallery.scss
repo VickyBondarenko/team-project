@@ -1,6 +1,95 @@
 .gallery .container {
+    
+    height: 1000px;
+   position: relative;
     background-image: url(/src/images/backgroud-2x.jpg);
-}
-// .gallery__box {
 
-// }
+
+        
+}
+
+.gallery__box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -20%);
+
+
+    margin: 0 auto;
+    width: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.gallery__imag {
+ width: 100%;
+
+}
+
+//---------- swiper-pagination--------
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+    background-color: rgb(109, 141, 80);
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+// ________________advanteges______________
+
+// .customer-reviews {}
+
+.customer-reviews__pre-wrap {
+    margin-bottom: 500px;
+}
+// .customer-reviews__wrap {
+
+
+.customer-reviews__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 65px;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.customer-reviews__item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-width: 600px;
+
+}
+
+.customer-reviews__text-box {
+    width: 600px;
+    padding: 0 20;
+    border-radius: 10px;
+    background-color: var(--primery-background-color);
+}
+
+// .customer-reviews__imag {}
+
+
+
+// .customer-reviews__text {}
+
+// .customer-reviews__name {}
+
+
+
+
+
