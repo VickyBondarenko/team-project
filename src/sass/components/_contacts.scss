@@ -1,7 +1,10 @@
-.container {}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
-.contscts__list {
-    list-style-type: none;
+.contscts__list { 
 }
 
 .contacts__item {
@@ -11,8 +14,7 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     margin-bottom: 16px;
-    padding: 40px 36px 24px 32px;
-    list-style-type: none;
+    padding: 40px 36px 24px 32px;list-style-type: none;
 }
 
 .contacts__item-subtitle {
@@ -71,4 +73,23 @@
 .contscts__link-contact {
     @include font(500, 12px, 1.6, null);
     color: var(--dark-text-color);
+}
+
+.contscts__btn-locations{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 196px;
+}
+
+.contscts__btn-franchise{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 196px;
+}
+
+.contacts__btn-icon{
+    margin-left: 6px;
 }
