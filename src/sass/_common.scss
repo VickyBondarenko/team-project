@@ -1,18 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 body {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
@@ -53,6 +40,23 @@ body {
     @include font(null, 36px, 1.25, 0.06em);
   }
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .no-scroll {
   overflow: hidden;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
