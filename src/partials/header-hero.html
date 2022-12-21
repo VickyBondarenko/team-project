@@ -4,15 +4,19 @@
             <svg>
                 <use href="./images/icons.svg#icon-logo"></use>
             </svg>
-            <button type="button" class="menu-btn" data-menu-visible="0">
-                <svg>
-                    <use href="./images/icons.svg#icon-ep_close" class="menu-btn__icon opened-icon visually-hidden"></use>
-                    <use href="./images/icons.svg#icon-eva_menu-fill" class="menu-btn__icon closed-icon"></use>
+            <button id="close-icon" type="button" class="menu-btn opened visible-hidden">
+                <svg  class="menu-btn__icon">
+                    <use href="./images/icons.svg#icon-ep_close"></use>
+                </svg>
+            </button>
+            <button id="open-icon" type="button" class="menu-btn closed">
+                <svg  class="menu-btn__icon">
+                    <use href="./images/icons.svg#icon-eva_menu-fill"></use>
                 </svg>
             </button>
         </div>
 
-        <div class="menu closed">
+        <div class="menu closed" data-menu-visible="0">
             <ul class="menu__list">
                 <li class="menu__list__item">Home</li>
                 <li class="menu__list__item">How it's made?</li>

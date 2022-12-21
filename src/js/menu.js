@@ -1,21 +1,23 @@
 const refs = {
   menuBtn: document.querySelector('.menu-btn'),
-  menuBtnIconOpen: document.querySelector('.menu-btn__icon.opened-icon'),
-  menuBtnIconClose: document.querySelector('.menu-btn__icon.closed-icon'),
+  menuBtnOpen: document.getElementById('close-icon'),
+  menuBtnClose: document.getElementById('open-icon'),
   menuDiv: document.querySelector('.menu')
 }
-console.log(refs.menuBtnIconOpen);
+console.log(refs.menuBtnOpen);
 refs.menuBtn.addEventListener('click', () =>{
-  if (refs.menuBtn.dataset.menuVisible == 0){
+  if (refs.menuDiv.dataset.menuVisible == 0){
     refs.menuBtn.dataset.menuVisible=1;
-    refs.menuBtnIconOpen.className = 'menu-btn__icon opened-icon'
-    refs.menuBtnIconClose.className = 'menu-btn__icon closed-icon visible-hidden'
+    refs.menuBtnOpen.className.animVal = 'menu-btn'
+    refs.menuBtnClose.className.animVal = 'menu-btn visible-hidden'
     refs.menuDiv.className = 'menu'
+    console.log('open');
   }else{
     refs.menuBtn.dataset.menuVisible=0;
-    refs.menuBtnIconOpen.className = 'menu-btn__icon opened visible-hidden'
-    refs.menuBtnIconClose.className = 'menu-btn__icon closed'
+    refs.menuBtnOpen.className.animVal = 'menu-btn visible-hidden'
+    refs.menuBtnClose.className.animVal = 'menu-btn'
     refs.menuDiv.className = 'menu closed'
+    console.log('close');
   }
-  console.log(refs.menuBtnIcon[0].className)
+  console.log(refs.menuBtnClose.className);
 })
