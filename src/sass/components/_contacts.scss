@@ -1,25 +1,32 @@
 .contscts{
     padding-bottom: 60px;
-}
-
-.container {
-    // width: 100%;
-    // margin-right: auto;
-    // margin-left: auto;
+    
 }
 
 .contscts__list { 
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contacts__item {
     background-color: #FCFCFC;
-    width: 280px;
-    height: 412px;
+    width: 100%;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    margin: 0 auto;
     margin-bottom: 16px;
     padding: 40px 36px 24px 32px;
     list-style-type: none;
+    @include tablet{
+        @include calc (3, 16px);
+        padding: 40px 24px;
+        margin-bottom: 40px;
+    }
+    @include desktop {
+        @include calc (3, 32px);
+        padding: 40px 40px;
+        margin-bottom: 60px;
+    }
 }
 
 .contacts__item-subtitle {
@@ -30,12 +37,30 @@
     border-radius: 4px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    @include tablet {
+        @include font(500, 16px, 1.4, 0.04em);
+        padding: 4px 13px;
+        border-radius: 6px;
+        margin-bottom: 32px;
+    }
+    @include desktop {
+        padding: 4px 14px;
+    }
 }
 
 .contacts__item-text {
     display: block;
     @include font(500, 12px, 1.8, 0.04em);
     margin-bottom: 8px;
+    // width: 190px;
+    @include tablet {
+        @include font(500, 14px, 1.8, 0.04em);
+        margin-bottom: 12px;
+    }
+    @include desktop {
+        @include font(500, 16px, 1.8, 0.04em);
+        margin-bottom: 8px;
+    }
 }
 
 .contacts__item-link {
@@ -44,41 +69,89 @@
     color: var(--secondary-background-color);
     margin-bottom: 24px;
     position: relative;
+    @include tablet {
+        @include font(500, 14px, 1.8, 0.04em);
+        margin-bottom: 32px;
+    }
+    @include desktop {
+        @include font(500, 16px, 1.8, 0.04em);
+    }
+}
+
+.contacts__item-link:hover{
+    text-decoration: underline
 }
 
 .contscts__list-schedule {
     display: flex;
     gap: 8px;
-    flex-wrap: wrap;
+    flex-direction: column;
     border-top: 1px solid #E1E1E1;
     padding-top: 24px;
+    @include tablet {
+        padding-top: 32px;
+    }
 }
 
 .contscts__item-schedule {}
 
 .contscts__schedule-subtitle {
-    @include font(500, 12px, 1.8, 0.04em);
+    @include font(500, 12px, 1.8, null);
+    @include tablet {
+        @include font(500, 14px, 1.8, null);
+    }
+    @include desktop {
+        @include font(500, 16px, 1.8, null);
+    }
 }
 
 .contscts__schedule-text {
-    @include font(500, 12px, 1.8, 0.04em);
+    @include font(500, 12px, 1.8, null);
     color: var(--btn-disabled-color);
+    @include tablet {
+        @include font(500, 14px, 1.8, null);
+    }
+    @include desktop {
+        @include font(500, 16px, 1.8, null);
+    }
 }
 
 .contscts__list-contact {
     display: flex;
     gap: 6px;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 24px;
     border-top: 1px solid #E1E1E1;
     padding-top: 24px;
+    @include tablet {
+        padding-top: 32px;
+        margin-top: 32px;
+        gap: 4px;
+    }
+    @include desktop {
+        gap: 8px;
+    }
 }
 
 .contscts__item-contact {}
 
 .contscts__link-contact {
+    display: block;
     @include font(500, 12px, 1.6, null);
     color: var(--dark-text-color);
+    @include tablet {
+        @include font(500, 14px, 1.5, null);
+    }
+    @include desktop {
+        @include font(500, 16px, 1.5, null);
+    }
+}
+
+.contscts__btn-wrap{
+    @include tablet{
+        // display: flex;
+        // flex-wrap: wrap;
+    }
 }
 
 .contscts__btn-locations{
@@ -89,6 +162,9 @@
     min-width: 196px;
     margin-left: auto;
     margin-right: auto;
+    @include tablet {
+        // display: inline-block;
+    }
 }
 
 .contscts__btn-franchise{
@@ -98,8 +174,16 @@
     min-width: 196px;
     margin-left: auto;
     margin-right: auto;
+    @include tablet {
+        // display: inline-block;
+    }
 }
+
+// .contscts__btn-franchise:focus + .contacts__btn-icon:focus {
+//     fill: #ffffff;
+// }
 
 .contacts__btn-icon{
     margin-left: 6px;
+    @include tablet {}
 }
