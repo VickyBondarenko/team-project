@@ -18,6 +18,9 @@
 }
 .footer__text {
   max-width: 232px;
+  @include tablet {
+    max-width: 352px;
+  }
   @include desktop {
     max-width: 100%;
   }
