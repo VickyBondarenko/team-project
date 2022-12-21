@@ -40,6 +40,73 @@
     @include font(null, 36px, 1.27, null);
   }
 }
+.about-content-wrap {
+  @include tablet {
+    display: flex;
+  }
+}
+.about-bg-wrap {
+  position: relative;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: #efd478;
+  margin: 0 auto 62px;
+  @include tablet {
+    width: 330px;
+    height: 330px;
+    margin: 0;
+    margin-right: 38px;
+  }
+  @include desktop {
+    width: 490px;
+    height: 490px;
+    margin-right: 109px;
+  }
+
+  &::before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(../images/about/about-mob.png);
+
+    background-size: 100%;
+    content: '';
+    border-radius: 50%;
+    top: 22px;
+    width: 100%;
+    height: 100%;
+    @include retina {
+      background-image: url(../images/about/about-mob-2x.png);
+    }
+
+    @include tablet {
+      background-image: url(../images/about/about-tab.png);
+      top: 26px;
+      @include retina {
+        background-image: url(../images/about/about-tab-2x.png);
+      }
+    }
+    @include desktop {
+      background-image: url(../images/about/about.png);
+      top: 39px;
+      @include retina {
+        background-image: url(../images/about/about-2x.png);
+      }
+    }
+  }
+}
+
+.about-text-button-wrap {
+  @include tablet {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include desktop {
+    width: 463px;
+  }
+}
 .about-text-container {
   margin-bottom: 10px;
   @include tablet {
@@ -67,36 +134,15 @@
 
   @include tablet {
     padding-left: 0;
-    padding-right: 34px;
+    padding-right: 0;
   }
   @include desktop {
     @include font(null, 16px, 1.75, null);
-    padding-right: 121px;
-  }
-}
-
-.about-img {
-  margin: 0 auto 40px;
-  width: 200px;
-  height: 200px;
-  background: #efd478;
-  border-radius: 50%;
-  padding-top: 22px;
-  @include tablet {
-    width: 330px;
-    height: 330px;
-    padding-top: 26px;
-    margin-right: 38px;
-  }
-  @include desktop {
-    padding-top: 39px;
-    width: 490px;
-    height: 490px;
-    margin-right: 109px;
   }
 }
 
 .about-btn {
+  width: 164px;
   margin: 0 auto;
 
   @include tablet {
@@ -107,19 +153,11 @@
 .about-btn__icon {
   margin-left: 4px;
   fill: currentColor;
-  // &:focus {
-  //   // fill: #ffffff;
-  // }
 }
 
-.about-wrap {
+.text-hidden {
+  display: none;
   @include tablet {
-    display: flex;
+    display: block;
   }
-}
-
-.about-text-button-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
