@@ -1,34 +1,49 @@
-<header>
+<header class="header">
     <div class="container">
         <div class="top-header">
-            <svg>
+            <svg class="logo" width="40" height="37">
                 <use href="./images/icons.svg#icon-logo"></use>
             </svg>
-            <button id="close-icon" type="button" class="menu-btn opened visible-hidden">
-                <svg  class="menu-btn__icon">
-                    <use href="./images/icons.svg#icon-ep_close"></use>
-                </svg>
+            <button type="button" class="menu-btn">
+                <div class="menu-btn__icon-container">
+                    <svg  class="menu-btn__icon" width="32" height="32">
+                        <use href="./images/icons.svg#icon-eva_menu-fill"></use>
+                    </svg>
+                </div>
+                <div class="menu-btn__icon-container visually-hidden">
+                    <svg class="menu-btn__icon" width="32" height="32">
+                        <use href="./images/icons.svg#icon-ep_close"></use>
+                    </svg>
+                </div>
             </button>
-            <button id="open-icon" type="button" class="menu-btn closed">
-                <svg  class="menu-btn__icon">
-                    <use href="./images/icons.svg#icon-eva_menu-fill"></use>
-                </svg>
-            </button>
-        </div>
-
-        <div class="menu closed" data-menu-visible="0">
-            <ul class="menu__list">
-                <li class="menu__list__item">Home</li>
-                <li class="menu__list__item">How it's made?</li>
-                <li class="menu__list__item">Products</li>
-                <li class="menu__list__item">Contact</li>
-            </ul>
         </div>
     </div>
+
+        <div class="menu is-hidden" data-menu-closed="1">
+            <div class="container">
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a class="menu__list__item__link">Home</a></li>
+                    <li class="menu__list__item"><a class="menu__list__item__link dark">How it's made?</a></li>
+                    <li class="menu__list__item"><a class="menu__list__item__link">Products</a></li>
+                    <li class="menu__list__item"><a class="menu__list__item__link">Contact</a></li>
+                    <button type="button" class="buy-btn">Buy now
+                        <svg style="margin-left: 4px;" width="12" height="12">
+                            <use href="./images/icons.svg#icon-arrow-button"></use>
+                        </svg>
+                    </button>
+                </ul>
+            </div>
+        </div>
 </header>
 
-<div class="hero">
-    <p>Ice cream made with passion</p>
-    <button type="button">Products</button>
-    <button type="button">How it's made?</button>
-</div>
+<section class="hero">
+    <div class="container">
+        <p>Ice cream made with passion</p>
+        <button type="button">Products</button>
+        <button type="button">How it's made?</button>
+        <img src="./images/hero/hero-2.png" alt="" width="177" height="auto">
+    </div>
+</section>
+
+<button type="button" class="visually-hidden" data-modal-open></button>
+<button type="button" class="visually-hidden" data-modal-close></button>
