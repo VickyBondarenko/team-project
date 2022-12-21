@@ -1,0 +1,74 @@
+.container {}
+
+.contscts__list {
+    list-style-type: none;
+}
+
+.contacts__item {
+    background-color: #FCFCFC;
+    width: 280px;
+    height: 412px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin-bottom: 16px;
+    padding: 40px 36px 24px 32px;
+    list-style-type: none;
+}
+
+.contacts__item-subtitle {
+    display: inline-block;
+    @include font(500, 12px, 1.2, 0.04em);
+    padding: 4px 22px;
+    background: #F8D24E;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.contacts__item-text {
+    display: block;
+    @include font(500, 12px, 1.8, 0.04em);
+    margin-bottom: 8px;
+}
+
+.contacts__item-link {
+    display: block;
+    @include font(500, 12px, 1.8, 0.04em);
+    color: var(--secondary-background-color);
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.contscts__list-schedule {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    border-top: 1px solid #E1E1E1;
+    padding-top: 24px;
+}
+
+.contscts__item-schedule {}
+
+.contscts__schedule-subtitle {
+    @include font(500, 12px, 1.8, 0.04em);
+}
+
+.contscts__schedule-text {
+    @include font(500, 12px, 1.8, 0.04em);
+    color: var(--btn-disabled-color);
+}
+
+.contscts__list-contact {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    border-top: 1px solid #E1E1E1;
+    padding-top: 24px;
+}
+
+.contscts__item-contact {}
+
+.contscts__link-contact {
+    @include font(500, 12px, 1.6, null);
+    color: var(--dark-text-color);
+}
