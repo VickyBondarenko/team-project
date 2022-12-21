@@ -1,0 +1,47 @@
+.backdrop {
+    background-color: var(--light-text-color);
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 28px;
+    width: 280px;
+    height: 365px;
+}
+
+.close-modal-location{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-location {}
+
+.modal-location-title {
+    font-family: 'Seymour One';
+    @include font(null, 16px, 1.5, null);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-location-map {
+    margin-bottom: 24px;
+}
+
+.modal-location-btn {
+    display: inline-block;
+    margin-bottom: 28px;
+    height: 42px;
+    padding: 12px 34px;
+    margin: 0 auto;
+}
+
