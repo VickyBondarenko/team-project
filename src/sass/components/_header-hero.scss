@@ -35,6 +35,7 @@
     top: 0;
     overflow-y: hidden;
     z-index: 30;
+    background: var(--primery-background-color);
 }
 
 .header__nav{
@@ -194,6 +195,14 @@
     font-size: 32px;
     line-height: 39px;
     color: var(--light-text-color);
+}
+
+.menu__button-link{
+    width: fit-content;
+    height: fit-content;
+    background: transparent;
+    border: transparent;
+    padding: 0;
 }
 
 .menu__link.dark{
