@@ -5,12 +5,12 @@
                 <use href="./images/icons.svg#icon-logo"></use>
             </svg>
             <button type="button" class="menu-btn">
-                <div class="menu-btn__icon-container">
+                <div class="menu-btn__icon-wrap">
                     <svg  class="menu-btn__icon" width="32" height="32">
                         <use href="./images/icons.svg#icon-eva_menu-fill"></use>
                     </svg>
                 </div>
-                <div class="menu-btn__icon-container visually-hidden">
+                <div class="menu-btn__icon-wrap visually-hidden">
                     <svg class="menu-btn__icon" width="32" height="32">
                         <use href="./images/icons.svg#icon-ep_close"></use>
                     </svg>
@@ -22,10 +22,10 @@
         <div class="menu is-hidden" data-menu-closed="1">
             <div class="container">
                 <ul class="menu__list">
-                    <li class="menu__list__item"><a class="menu__list__item__link">Home</a></li>
-                    <li class="menu__list__item"><a class="menu__list__item__link dark">How it's made?</a></li>
-                    <li class="menu__list__item"><a class="menu__list__item__link">Products</a></li>
-                    <li class="menu__list__item"><a class="menu__list__item__link">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link">Home</a></li>
+                    <li class="menu__item"><a class="menu__link dark">How it's made?</a></li>
+                    <li class="menu__item"><a class="menu__link">Products</a></li>
+                    <li class="menu__item"><a class="menu__link">Contact</a></li>
                     <button type="button" class="buy-btn">Buy now
                         <svg style="margin-left: 4px;" width="12" height="12">
                             <use href="./images/icons.svg#icon-arrow-button"></use>
@@ -37,13 +37,24 @@
 </header>
 
 <section class="hero">
-    <div class="hero-container container">
-        <h1 class="section-tittle hero-tittle">Ice cream made with passion</h1>
-            <ul class="link-list">
-                <li class="link-list__item"><a href="#product" class="link-list__item__product-link">Products</a></li>
-                <li class="link-list__item"><a class="link-list__item__how-link">How it's made?</a></li>
-            </ul>
-        <img src="./images/hero/hero-2.png" alt="" width="177" height="auto" class="hero-img-three-balls">
+    <div class="hero__container container">
+        <h1 class="section-tittle hero__tittle">Ice cream made with passion</h1>
+        <ul class="link-list">
+            <li class="link-list__item"><a href="#product" class="link-list__product-link">Products</a></li>
+            <li class="link-list__item"><a class="link-list__how-link">How it's made?</a></li>
+        </ul>
+        <img src="./images/hero/hero-1.png" alt="" class="hero__img-plate">
+        <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        <svg class="hero__arrow" width="40" height="16">
+            <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+        <img src="./images/hero/hero-2.png" alt="" width="177" height="auto" class="hero__img-three-balls">
+        <svg class="hero__background-left-sprite">
+            <use href="./images/icons.svg#icon-dots-for-mobile-tablet-left-side"></use>
+        </svg>
+        <svg class="hero__background-right-sprite">
+            <use href="./images/icons.svg#icon-dots-for-mobile-tablet-right-side"></use>
+        </svg>
     </div>
 </section>
 
