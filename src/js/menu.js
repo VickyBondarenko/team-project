@@ -1,23 +1,26 @@
-(() => {
-  const refs = {
-    openMenuBtn: document.querySelector('[data-menu-open]'),
-    closeMenuBtn: document.querySelector('[data-menu-close]'),
-    menu: document.querySelector('[data-menu]'),
-    body: document.querySelector('body'),
-    menuList: document.querySelector('.mob-nav__list'),
-  };
+let closed = 'menu is-hidden', opened = 'menu'
+let btnIcon = document.querySelectorAll('.menu-btn__icon-wrap')
+let mobileMenu = document.querySelector('.menu');
+let header = document.querySelector('.header')
 
-  refs.openMenuBtn.addEventListener('click', toggleMenu);
-  refs.closeMenuBtn.addEventListener('click', toggleMenu);
-  refs.menuList.addEventListener('click', removeMenu);
+let openBtn = document.querySelectorAll('.menu-btn')
 
-  function toggleMenu() {
-    refs.menu.classList.toggle('is-hidden');
-    refs.body.classList.toggle('no-scroll');
+openBtn.forEach((a) =>{a.addEventListener('click', openCloseMenu)})
+
+function openCloseMenu() {
+  if (mobileMenu.dataset.menuClosed == 1) {
+    mobileMenu.style = 'height: 100vh'
+    mobileMenu.className = opened;
+    mobileMenu.dataset.menuClosed = 0;
+    btnIcon[0].className = 'menu-btn__icon-wrap visually-hidden'
+    btnIcon[1].className = 'menu-btn__icon-wrap'
+    header.className = 'header fixed'
+  } else {
+    mobileMenu.className = closed;
+    mobileMenu.dataset.menuClosed = 1;
+    btnIcon[1].className = 'menu-btn__icon-wrap visually-hidden'
+    btnIcon[0].className = 'menu-btn__icon-wrap'
+    header.className = 'header'
+    setTimeout(() => {mobileMenu.style = 'height: 1px'},255)
   }
-
-  function removeMenu() {
-    refs.menu.classList.add('is-hidden');
-    refs.body.classList.remove('no-scroll');
-  }
-})();
+}

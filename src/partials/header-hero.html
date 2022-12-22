@@ -1,0 +1,84 @@
+<header class="header">
+    <div class="container">
+        <div class="top-header">
+            <img srcset="./images/hero/logo.png, ./images/hero/logo-2x.png" class="logo" src="./images/hero/logo.png" alt="ice cream logo">
+            <button type="button" class="menu-btn">
+                <div class="menu-btn__icon-wrap">
+                    <svg  class="menu-btn__icon" width="32" height="32">
+                        <use href="./images/icons.svg#icon-eva_menu-fill"></use>
+                    </svg>
+                </div>
+                <div class="menu-btn__icon-wrap visually-hidden">
+                    <svg class="menu-btn__icon" width="32" height="32">
+                        <use href="./images/icons.svg#icon-ep_close"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+
+        <div class="menu is-hidden" data-menu-closed="1">
+            <div class="container">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link">Home</a></li>
+                    <li class="menu__item"><a class="menu__link dark">How it's made?</a></li>
+                    <li class="menu__item"><a class="menu__link">Products</a></li>
+                    <li class="menu__item"><a class="menu__link">Contact</a></li>
+                    <button type="button" class="buy-btn">Buy now
+                        <svg style="margin-left: 4px;" width="12" height="12">
+                            <use href="./images/icons.svg#icon-arrow-button"></use>
+                        </svg>
+                    </button>
+                </ul>
+            </div>
+        </div>
+</header>
+
+<section class="hero">
+    <div class="hero__container container">
+        <h1 class="section-tittle hero__tittle">Ice cream made with passion</h1>
+        <ul class="link-list">
+            <li class="link-list__item"><a href="#product" class="link-list__product-link">Products</a></li>
+            <li class="link-list__item"><a class="link-list__how-link">How it's made?</a></li>
+        </ul>
+        <div class="not-on-mobile">
+            <img srcset="./images/hero/hero-1-tab.png, ./images/hero/hero-1-tab-2x.png, ./images/hero/hero-1.png, ./images/hero/hero-1-2x.png" alt="" class="hero__img-plate">
+            <div class="paragraph-with-arrow">
+                <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <svg class="hero__arrow" width="40" height="16">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+        <div class="hero__img-wrap">
+            <picture>
+                <source
+                srcset="./images/hero/hero-2.png 1x, ./images/hero/hero-2-2x.png 2x"
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="./images/hero/hero-2-tab.png 1x, ./images/hero/hero-2-tab-2x.png 2x"
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="./images/hero/hero-2-mob.png 1x, ./images/hero/hero-2-mob-2x.png 2x"
+                media="(max-width: 767px)">
+            </picture>
+            <img srcset="./images/hero/hero-2-mob.png, ./images/hero/hero-2-mob-2x.png, ./images/hero/hero-2-tab.png, ./images/hero/hero-2-tab-2x.png, ./images/hero/hero-2.png, ./images/hero/hero-2-2x.png" alt="" width="177" height="auto" class="hero__img-three-balls">
+            <picture>
+                <source srcset="./images/hero/dots-desktop.png 1x" media="(min-width: 1200px)">
+                <source srcset="./images/hero/dots-tablet.png 1x" media="(min-width: 768px)">
+                <source srcset="./images/hero/dots-mobile.png 1x" media="(max-width: 767px)">
+                <img src="./images/hero/dots-desktop.png" width="1200" height="384" alt="" class="hero__background-dots">
+            </picture>
+        </div>
+</section>
+
+<button type="button" class="visually-hidden" data-modal-open></button>
+<button type="button" class="visually-hidden" data-modal-close></button>
+
+<div style="height: 1200px; background-color: blue;">
+</div>
+
+<div id="product">products</div>

@@ -10,8 +10,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <!-- <script type="module" src="./index.js"></script> -->
 </head>
 
 <body>
@@ -30,6 +35,27 @@
   <include src="./partials/modal-our-location.html"></include>
   <include src="./partials/modal-product-card.html"></include>
   <include src="./partials/modal-read-more.html"></include>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.myS', {
+        autoplay: {
+          delay: 1000,
+        },
+
+        loop: true,
+      });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySlider', {
+        // autoplay: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        loop: true,
+      });
+    </script>
 </body>
 
 </html>
