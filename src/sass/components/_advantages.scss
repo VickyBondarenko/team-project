@@ -12,6 +12,10 @@
 @include tablet {
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 205px;
+}
+@include desktop {
+    padding-bottom: 180px;
 }
 
 }
@@ -56,7 +60,15 @@
 .advantages__title {
     display: block;
     color: var(--light-text-color);
-    @include font(700, 36, 1.22, 0.04)
+    @include font(700, 36, 1.22, 0.04);
+
+    @include tablet {
+        @include font(700, 48, 1.22, 0.04)
+    }
+
+    @include desktop {
+        @include font(700, 58, 1.22, 0.04)
+    }
 }
 
 .advantages__text {
@@ -64,6 +76,15 @@
     max-width: 230px;
     text-align: center;
     color: var(--light-text-color);
-    @include font(700, 12, 1.7, nole)
+    @include font(700, 12, 1.7, nole);
+
+    @include tablet {
+
+    @include font(400, 14, 1.7, nole)
+    }
+
+    @include desktop {
+     @include font(400, 16, 1.7, nole)
+    }
 
 }
