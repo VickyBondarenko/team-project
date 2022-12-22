@@ -1,16 +1,5 @@
-.container{
-    width: 320px;
+.header-container{
     width: 100%;
-    padding: 0;
-    @include mobile{
-        width: 480px;
-    }
-    @include tablet{
-        width: 768px;
-    }
-    @include desktop{
-        width: 1200px;
-    }
 }
 
 .logo{
@@ -81,7 +70,8 @@
 
 .top-header{
     width: 100%;
-    padding: 12px 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     display: flex;
     align-items: center;
     background: rgba(132, 161, 120, 1);
