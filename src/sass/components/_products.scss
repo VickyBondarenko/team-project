@@ -42,6 +42,7 @@
   margin-bottom: 148px;
   font-family: 'Seymour One';
   color: var(--dark-text-color);
+
   @include tablet {
     margin-bottom: 200px;
     @include font(null, 34px, 1.26, 0.04em);
@@ -99,6 +100,7 @@
     @include desktop {
       width: 302px;
       height: 302px;
+      top: -176px;
     }
   }
 
@@ -113,6 +115,7 @@
     border-radius: 50%;
     z-index: 10;
     @include desktop {
+      top: -160px;
       width: 302px;
       height: 302px;
     }
@@ -222,9 +225,11 @@
     padding-top: 123px;
     margin-bottom: 40px;
     @include tablet {
+      @include font(null, 22px, 1.22, null);
       padding-top: 108px;
     }
     @include desktop {
+      @include font(null, 30px, 1.23, 0null);
       padding-top: 165px;
       margin-bottom: 66px;
     }

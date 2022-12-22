@@ -9,7 +9,7 @@
   }
   @include desktop {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 99px;
   }
 }
 
@@ -28,14 +28,17 @@
 }
 
 .about-section-title {
-  margin-bottom: 32px;
   font-family: 'Seymour One';
   color: var(--light-text-color);
+  margin: 0 auto 32px;
+  width: 200px;
   @include tablet {
+    width: 100%;
     margin-bottom: 72px;
     @include font(null, 34px, 1.26, 0.06em);
   }
   @include desktop {
+    width: 100%;
     margin-bottom: 82px;
     @include font(null, 36px, 1.27, null);
   }
