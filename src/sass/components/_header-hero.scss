@@ -158,6 +158,9 @@
     &:focus{
         background: var(--btn-hover-color);
         color: var(--light-text-color);
+        & .btn-buy__arrow-icon{
+            fill: var(--light-text-color);
+        }
     }
     &:disabled{
         background: var(--btn-disabled-color);
