@@ -1,7 +1,13 @@
-<header class="header">
+<header class="header" id="header">
     <div class="container">
         <div class="top-header">
             <img srcset="./images/hero/logo.png, ./images/hero/logo-2x.png" class="logo" src="./images/hero/logo.png" alt="ice cream logo">
+            <ul class="header__nav">
+                <li class="nav__item"><a class="nav__link" href="#header">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#how-its-made">How it's made?</a></li>
+                <li class="nav__item"><a class="nav__link" href="#products">Products</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contacts">Contact</a></li>
+            </ul>
             <button type="button" class="menu-btn">
                 <div class="menu-btn__icon-wrap">
                     <svg  class="menu-btn__icon" width="32" height="32">
@@ -12,29 +18,30 @@
                     <svg class="menu-btn__icon" width="32" height="32">
                         <use href="./images/icons.svg#icon-ep_close"></use>
                     </svg>
-                    <button type="button" class="buy-btn-tablet not-on-mobile">Buy now
-                        <svg style="margin-left: 4px;" width="12" height="12">
-                            <use href="./images/icons.svg#icon-arrow-button"></use>
-                        </svg>
-                    </button>
                 </div>
+            </button>
+            <button type="button" class="buy-btn not-on-mobile">
+                Buy now
+                <svg class="btn-buy__arrow-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-arrow-button"></use>
+                </svg>
             </button>
         </div>
     </div>
 
     <div class="menu is-hidden" data-menu-closed="1">
-        <div class="container">
+        <div class="container menu__container">
             <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link">Home</a></li>
-                <li class="menu__item"><a class="menu__link dark">How it's made?</a></li>
-                <li class="menu__item"><a class="menu__link">Products</a></li>
-                <li class="menu__item"><a class="menu__link">Contact</a></li>
-                <button type="button" class="buy-btn-mobile">Buy now
-                    <svg style="margin-left: 4px;" width="12" height="12">
-                        <use href="./images/icons.svg#icon-arrow-button"></use>
-                    </svg>
-                </button>
+                <li class="menu__item"><a class="menu__link" href="#header">Home</a></li>
+                <li class="menu__item"><a class="menu__link dark" href="#how-its-made">How it's made?</a></li>
+                <li class="menu__item"><a class="menu__link" href="#products">Products</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contacts">Contact</a></li>
             </ul>
+            <button type="button" class="buy-btn">Buy now
+                <svg class="btn-buy__arrow-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-arrow-button"></use>
+                </svg>
+            </button>
         </div>
     </div>
 </header>
@@ -52,7 +59,7 @@
         <h1 class="section-tittle hero__tittle">Ice cream made with passion</h1>
         <ul class="link-list">
             <li class="link-list__item"><a href="#products" class="link-list__product-link">Products</a></li>
-            <li class="link-list__item"><a class="link-list__how-link">How it's made?</a></li>
+            <li class="link-list__item"><a class="link-list__how-link" href="#how-its-made">How it's made?</a></li>
         </ul>
         <div class="not-on-mobile hero__description">
             <img srcset="./images/hero/hero-1-tab.png, ./images/hero/hero-1-tab-2x.png, ./images/hero/hero-1.png, ./images/hero/hero-1-2x.png" alt="" class="hero__img-plate">
@@ -87,12 +94,3 @@
             </picture>
         </div>
 </section>
-
-<button type="button" class="visually-hidden" data-modal-open></button>
-<button type="button" class="visually-hidden" data-modal-close></button>
-
-<div style="height: 1200px;">
-
-</div>
-
-<div id="products">Products</div>
