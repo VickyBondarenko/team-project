@@ -1,7 +1,7 @@
-.is-hidden .modal {
+.is-hidden .product-modal {
   scale: 0;
 }
-.backdrop {
+.product-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -139,7 +139,7 @@
   }
 }
 
-.textarea {
+.product-modal-textarea {
   margin-bottom: 26px;
 }
 .product-modal-form__textarea {
@@ -181,7 +181,7 @@
   }
 }
 
-.products-list {
+.product-modal-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,7 +195,7 @@
   }
 }
 
-.products-list__item {
+.product-modal-list__item {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -297,7 +297,7 @@
   }
 }
 
-.products-title {
+.product-modal-title {
   width: 120px;
   @include font(700, 16px, 1.25, 0.04em);
   color: var(--dark-text-color);
