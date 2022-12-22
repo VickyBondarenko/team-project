@@ -73,6 +73,12 @@
     </div>
         <div class="hero__img-wrap">
             <picture>
+                <source srcset="./images/hero/dots-desktop.png 1x" media="(min-width: 1200px)">
+                <source srcset="./images/hero/dots-tablet.png 1x" media="(min-width: 768px)">
+                <source srcset="./images/hero/dots-mobile.png 1x" media="(max-width: 767px)">
+                <img src="./images/hero/dots-desktop.png" width="1200" height="384" alt="" class="hero__background-dots">
+            </picture>
+            <picture>
                 <source
                 srcset="./images/hero/hero-2.png 1x, ./images/hero/hero-2-2x.png 2x"
                 media="(min-width: 1200px)"
@@ -85,12 +91,6 @@
                 srcset="./images/hero/hero-2-mob.png 1x, ./images/hero/hero-2-mob-2x.png 2x"
                 media="(max-width: 767px)">
                 <img srcset="./images/hero/hero-2-mob.png, ./images/hero/hero-2-mob-2x.png, ./images/hero/hero-2-tab.png, ./images/hero/hero-2-tab-2x.png, ./images/hero/hero-2.png, ./images/hero/hero-2-2x.png" alt="" width="177" height="auto" class="hero__img-three-balls">
-            </picture>
-            <picture>
-                <source srcset="./images/hero/dots-desktop.png 1x" media="(min-width: 1200px)">
-                <source srcset="./images/hero/dots-tablet.png 1x" media="(min-width: 768px)">
-                <source srcset="./images/hero/dots-mobile.png 1x" media="(max-width: 767px)">
-                <img src="./images/hero/dots-desktop.png" width="1200" height="384" alt="" class="hero__background-dots">
             </picture>
         </div>
 </section>
