@@ -1,100 +1,101 @@
-<!-- <div class="backdrop" data-modal>
-  <div class="modal">
-    <button type="button" class="modal__close-btn" data-modal-close>
-      <svg width="11" height="11">
-        <use href="./images/icons.svg#icon-cros"></use>
+<div class="backdrop-igredients" data-modal>
+  <div class="modal-igredients">
+    <button type="button" class="close-modal-igredients-btn" data-modal-close>
+      <svg class="modal-igredients-btn__icon" width="20" height="20">
+        <use href="./images/icons.svg#icon-ep_close"></use>
       </svg>
     </button>
 
- 
-    <p>Chololate icecream</p>
-    <img src="#" alt="icecream" />
-    <ul>
-      <li>
-        <span>320</span>
-        <span>kcal</span>
+    <p class="modal-igredients-title">Chololate icecream</p>
+    <div class="modal-igredients-img-wrap"></div>
+    <ul class="modal-igredients-list">
+      <li class="modal-igredients-list__item">
+        <span class="modal-igredients-element"
+          ><span class="modal-igredients-value">320</span>kcal</span
+        >
       </li>
-      <li>
-        <span>4g</span>
-        <span>Prote...</span>
+      <li class="modal-igredients-list__item">
+        <span class="modal-igredients-element"
+          ><span class="modal-igredients-value">4g</span>Prote...</span
+        >
       </li>
-      <li>
-        <span>8,2g</span>
-        <span>Fats</span>
+      <li class="modal-igredients-list__item">
+        <span class="modal-igredients-element"
+          ><span class="modal-igredients-value">8,2g</span>Fats</span
+        >
       </li>
-      <li>
-        <span>40,4g</span>
-        <span>Carbs</span>
+      <li class="modal-igredients-list__item">
+        <span class="modal-igredients-element"
+          ><span class="modal-igredients-value">40,4g</span>Carbs</span
+        >
       </li>
     </ul>
 
-    <p>Ingredients</p>
-    <ul>
-      <li>
+    <p class="modal-igredients-recipe-title">Ingredients</p>
+    <ul class="modal-igredients-recipe-list">
+      <li class="modal-igredients-recipe-item">
         <p>Milk</p>
         <p>100ml</p>
       </li>
-      <li>
+      <li class="modal-igredients-recipe-item">
         <p>Belgian chocolate</p>
         <p>20g</p>
       </li>
-      <li>
+      <li class="modal-igredients-recipe-item">
         <p>Cream</p>
         <p>150 ml</p>
       </li>
-      <li>
+      <li class="modal-igredients-recipe-item">
         <p>Cocoa powder</p>
         <p>30g</p>
       </li>
-      <li>
+      <li class="modal-igredients-recipe-item">
         <p>Sugar</p>
         <p>40g</p>
       </li>
-      <li>
+      <li class="modal-igredients-recipe-item">
         <p>Vanilla sugar</p>
         <p>10g</p>
       </li>
     </ul>
 
+    <form class="igredients-modal-form" name="signup-form" autocomplete="off">
+      <label class="igredients-modal-form__label" for="user-name">
+        <div class="igredients-modal-form__wrap">
+          <input
+            class="igredients-modal-form__input"
+            type="name"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+          />
+        </div>
+      </label>
 
-    <form class="modal-form">
-      <div class="modal-form__field">
-        <label for="user-name" class="modal-form__label"></label>
+      <label class="igredients-modal-form__label" for="user-tel">
+        <div class="igredients-modal-form__wrap">
+          <input
+            class="igredients-modal-form__input"
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            placeholder="Phone"
+          />
+        </div>
+      </label>
 
-        <input
-          class="input"
-          type="text"
-          name="user-name"
-          required
-          id="user-name"
-          placeholder="Name"
-        />
-      </div>
-      <div class="modal-form__field">
-        <label for="user-tel" class="modal-form__label"></label>
-
-        <input
-          class="input"
-          type="tel"
-          name="user-tel"
-          required
-          id="user-tel"
-          placeholder="Phone"
-        />
-      </div>
-
-      <div class="modal-text-field">
-        <label for="user-coment" class="modal-form__label"
-          ><span>Comment</span></label
-        >
+      <label class="igredients-modal-form__label textarea" for="user-feedback">
         <textarea
-          name="user-coment"
-          id="user-coment"
-          placeholder="Commen"
-          class="modal-text"
+          class="igredients-modal-form__textarea"
+          name="user-feedback"
+          id="user-feedback"
+          placeholder="Comment"
         ></textarea>
-      </div>
-      <button class="submit-btn button" type="submit">Submit</button>
+      </label>
+
+      <button class="button-colored igredients-modal-form__btn" type="submit">
+        Submit
+      </button>
     </form>
   </div>
-</div> -->
+</div>
