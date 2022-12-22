@@ -1,5 +1,6 @@
 .header-container{
     width: 100%;
+    background-color: var(--primery-background-color    );
 }
 
 .logo{
@@ -119,7 +120,7 @@
 }
 
 .menu__list{
-    background: rgba(132, 161, 120, 1);
+    background: var(--primery-background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,7 +136,7 @@
 .buy-btn {
     width: 152px;
     height: 42px;
-    background: rgba(248, 210, 78, 1);
+    background: var(--brend-color);
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
