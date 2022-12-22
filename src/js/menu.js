@@ -1,6 +1,7 @@
 let closed = 'menu is-hidden', opened = 'menu'
 let btnIcon = document.querySelectorAll('.menu-btn__icon-wrap')
 let mobileMenu = document.querySelector('.menu');
+let header = document.querySelector('.header')
 
 let openBtn = document.querySelectorAll('.menu-btn')
 
@@ -13,11 +14,13 @@ function openCloseMenu() {
     mobileMenu.dataset.menuClosed = 0;
     btnIcon[0].className = 'menu-btn__icon-wrap visually-hidden'
     btnIcon[1].className = 'menu-btn__icon-wrap'
+    header.className = 'header fixed'
   } else {
     mobileMenu.className = closed;
     mobileMenu.dataset.menuClosed = 1;
     btnIcon[1].className = 'menu-btn__icon-wrap visually-hidden'
     btnIcon[0].className = 'menu-btn__icon-wrap'
+    header.className = 'header'
     setTimeout(() => {mobileMenu.style = 'height: 1px'},255)
   }
 }

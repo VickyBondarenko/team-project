@@ -1,9 +1,7 @@
 <header class="header">
     <div class="container">
         <div class="top-header">
-            <svg class="logo" width="40" height="37">
-                <use href="./images/icons.svg#icon-logo"></use>
-            </svg>
+            <img srcset="./images/hero/logo.png, ./images/hero/logo-2x.png" class="logo" src="./images/hero/logo.png" alt="ice cream logo">
             <button type="button" class="menu-btn">
                 <div class="menu-btn__icon-wrap">
                     <svg  class="menu-btn__icon" width="32" height="32">
@@ -43,27 +41,44 @@
             <li class="link-list__item"><a href="#product" class="link-list__product-link">Products</a></li>
             <li class="link-list__item"><a class="link-list__how-link">How it's made?</a></li>
         </ul>
-        <img src="./images/hero/hero-1.png" alt="" class="hero__img-plate">
-        <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <svg class="hero__arrow" width="40" height="16">
-            <use href="./images/icons.svg#icon-arrow"></use>
-        </svg>
-        <img src="./images/hero/hero-2.png" alt="" width="177" height="auto" class="hero__img-three-balls">
-        <svg class="hero__background-left-sprite">
-            <use href="./images/icons.svg#icon-dots-for-mobile-tablet-left-side"></use>
-        </svg>
-        <svg class="hero__background-right-sprite">
-            <use href="./images/icons.svg#icon-dots-for-mobile-tablet-right-side"></use>
-        </svg>
+        <div class="not-on-mobile">
+            <img srcset="./images/hero/hero-1-tab.png, ./images/hero/hero-1-tab-2x.png, ./images/hero/hero-1.png, ./images/hero/hero-1-2x.png" alt="" class="hero__img-plate">
+            <div class="paragraph-with-arrow">
+                <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <svg class="hero__arrow" width="40" height="16">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+            </div>
+        </div>
     </div>
+        <div class="hero__img-wrap">
+            <picture>
+                <source
+                srcset="./images/hero/hero-2.png 1x, ./images/hero/hero-2-2x.png 2x"
+                media="(min-width: 1200px)"
+                >
+                <source
+                srcset="./images/hero/hero-2-tab.png 1x, ./images/hero/hero-2-tab-2x.png 2x"
+                media="(min-width: 768px)"
+                >
+                <source
+                srcset="./images/hero/hero-2-mob.png 1x, ./images/hero/hero-2-mob-2x.png 2x"
+                media="(max-width: 767px)">
+            </picture>
+            <img srcset="./images/hero/hero-2-mob.png, ./images/hero/hero-2-mob-2x.png, ./images/hero/hero-2-tab.png, ./images/hero/hero-2-tab-2x.png, ./images/hero/hero-2.png, ./images/hero/hero-2-2x.png" alt="" width="177" height="auto" class="hero__img-three-balls">
+            <picture>
+                <source srcset="./images/hero/dots-desktop.png 1x" media="(min-width: 1200px)">
+                <source srcset="./images/hero/dots-tablet.png 1x" media="(min-width: 768px)">
+                <source srcset="./images/hero/dots-mobile.png 1x" media="(max-width: 767px)">
+                <img src="./images/hero/dots-desktop.png" width="1200" height="384" alt="" class="hero__background-dots">
+            </picture>
+        </div>
 </section>
-
 
 <button type="button" class="visually-hidden" data-modal-open></button>
 <button type="button" class="visually-hidden" data-modal-close></button>
 
 <div style="height: 1200px; background-color: blue;">
-
 </div>
 
 <div id="product">products</div>
