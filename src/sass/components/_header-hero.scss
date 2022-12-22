@@ -1,5 +1,4 @@
-.container{
-    width: 320px;
+.local-container{
     width: 100%;
     padding: 0;
     @include mobile{
@@ -81,7 +80,8 @@
 
 .top-header{
     width: 100%;
-    padding: 12px 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     display: flex;
     align-items: center;
     background: rgba(132, 161, 120, 1);
