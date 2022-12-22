@@ -313,6 +313,7 @@
     position: absolute;
     right: 60px;
     bottom: 0px;
+    z-index: 1;
     @include mobile{
         position: absolute;
         right: 60px;
