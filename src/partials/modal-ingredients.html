@@ -1,6 +1,6 @@
-<div class="backdrop-igredients is-hidden">
+<div class="backdrop-igredients is-hidden" data-ingredients-modal>
   <div class="modal-igredients">
-    <button type="button" class="close-modal-igredients-btn">
+    <button type="button" class="close-modal-igredients-btn" data-ingredients-modal-close>
       <svg class="modal-igredients-btn__icon" width="20" height="20">
         <use href="./images/icons.svg#icon-ep_close"></use>
       </svg>
@@ -10,24 +10,16 @@
     <div class="modal-igredients-img-wrap"></div>
     <ul class="modal-igredients-list">
       <li class="modal-igredients-list__item">
-        <span class="modal-igredients-element"
-          ><span class="modal-igredients-value">320</span>kcal</span
-        >
+        <span class="modal-igredients-element"><span class="modal-igredients-value">320</span>kcal</span>
       </li>
       <li class="modal-igredients-list__item">
-        <span class="modal-igredients-element"
-          ><span class="modal-igredients-value">4g</span>Prote...</span
-        >
+        <span class="modal-igredients-element"><span class="modal-igredients-value">4g</span>Prote...</span>
       </li>
       <li class="modal-igredients-list__item">
-        <span class="modal-igredients-element"
-          ><span class="modal-igredients-value">8,2g</span>Fats</span
-        >
+        <span class="modal-igredients-element"><span class="modal-igredients-value">8,2g</span>Fats</span>
       </li>
       <li class="modal-igredients-list__item">
-        <span class="modal-igredients-element"
-          ><span class="modal-igredients-value">40,4g</span>Carbs</span
-        >
+        <span class="modal-igredients-element"><span class="modal-igredients-value">40,4g</span>Carbs</span>
       </li>
     </ul>
 
@@ -62,35 +54,19 @@
     <form class="igredients-modal-form" name="signup-form" autocomplete="off">
       <label class="igredients-modal-form__label" for="user-name">
         <div class="igredients-modal-form__wrap">
-          <input
-            class="igredients-modal-form__input"
-            type="name"
-            name="user-name"
-            id="user-name"
-            placeholder="Name"
-          />
+          <input class="igredients-modal-form__input" type="name" name="user-name" id="user-name" placeholder="Name" />
         </div>
       </label>
 
       <label class="igredients-modal-form__label" for="user-tel">
         <div class="igredients-modal-form__wrap">
-          <input
-            class="igredients-modal-form__input"
-            type="tel"
-            name="user-tel"
-            id="user-tel"
-            placeholder="Phone"
-          />
+          <input class="igredients-modal-form__input" type="tel" name="user-tel" id="user-tel" placeholder="Phone" />
         </div>
       </label>
 
       <label class="igredients-modal-form__label textarea" for="user-feedback">
-        <textarea
-          class="igredients-modal-form__textarea"
-          name="user-feedback"
-          id="user-feedback"
-          placeholder="Comment"
-        ></textarea>
+        <textarea class="igredients-modal-form__textarea" name="user-feedback" id="user-feedback"
+          placeholder="Comment"></textarea>
       </label>
 
       <button class="button-colored igredients-modal-form__btn" type="submit">

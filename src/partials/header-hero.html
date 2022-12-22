@@ -1,7 +1,8 @@
 <header class="header" id="header">
     <div class="container header-container">
         <div class="top-header">
-            <img srcset="./images/hero/logo.png, ./images/hero/logo-2x.png" class="logo" src="./images/hero/logo.png" alt="ice cream logo">
+            <img srcset="./images/hero/logo.png, ./images/hero/logo-2x.png" class="logo" src="./images/hero/logo.png"
+                alt="ice cream logo">
             <ul class="header__nav">
                 <li class="nav__item"><a class="nav__link" href="#header">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#how-its-made">How it's made?</a></li>
@@ -10,7 +11,7 @@
             </ul>
             <button type="button" class="menu-btn">
                 <div class="menu-btn__icon-wrap">
-                    <svg  class="menu-btn__icon" width="32" height="32">
+                    <svg class="menu-btn__icon" width="32" height="32">
                         <use href="./images/icons.svg#icon-eva_menu-fill"></use>
                     </svg>
                 </div>
@@ -20,7 +21,7 @@
                     </svg>
                 </div>
             </button>
-            <button type="button" class="buy-btn not-on-mobile">
+            <button type="button" class="buy-btn not-on-mobile" data-product-modal-open>
                 Buy now
                 <svg class="btn-buy__arrow-icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-arrow-button"></use>
@@ -32,12 +33,16 @@
     <div class="menu is-hidden" data-menu-closed="1">
         <div class="container menu__container">
             <ul class="menu__list">
-                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link" href="#header">Home</a></button></li>
-                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link dark" href="#how-its-made">How it's made?</a></button></li>
-                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link" href="#products">Products</a></button></li>
-                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link" href="#contacts">Contact</a></button></li>
+                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link"
+                            href="#header">Home</a></button></li>
+                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link dark"
+                            href="#how-its-made">How it's made?</a></button></li>
+                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link"
+                            href="#products">Products</a></button></li>
+                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link"
+                            href="#contacts">Contact</a></button></li>
             </ul>
-            <button type="button" class="buy-btn">Buy now
+            <button type="button" class="buy-btn" data-product-modal-open>Buy now
                 <svg class="btn-buy__arrow-icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-arrow-button"></use>
                 </svg>
@@ -62,35 +67,32 @@
             <li class="link-list__item"><a class="link-list__how-link" href="#how-its-made">How it's made?</a></li>
         </ul>
         <div class="not-on-mobile hero__description">
-            <img srcset="./images/hero/hero-1-tab.png, ./images/hero/hero-1-tab-2x.png, ./images/hero/hero-1.png, ./images/hero/hero-1-2x.png" alt="" class="hero__img-plate">
+            <img srcset="./images/hero/hero-1-tab.png, ./images/hero/hero-1-tab-2x.png, ./images/hero/hero-1.png, ./images/hero/hero-1-2x.png"
+                alt="" class="hero__img-plate">
             <div class="paragraph-with-arrow">
-                <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et</p>
                 <svg class="hero__arrow" width="40" height="16">
                     <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
             </div>
         </div>
     </div>
-        <div class="hero__img-wrap">
-            <picture>
-                <source srcset="./images/hero/dots-desktop.png 1x" media="(min-width: 1200px)">
-                <source srcset="./images/hero/dots-tablet.png 1x" media="(min-width: 768px)">
-                <source srcset="./images/hero/dots-mobile.png 1x" media="(max-width: 767px)">
-                <img src="./images/hero/dots-desktop.png" width="1200" height="384" alt="" class="hero__background-dots">
-            </picture>
-            <picture>
-                <source
-                srcset="./images/hero/hero-2.png 1x, ./images/hero/hero-2-2x.png 2x"
-                media="(min-width: 1200px)"
-                >
-                <source
-                srcset="./images/hero/hero-2-tab.png 1x, ./images/hero/hero-2-tab-2x.png 2x"
-                media="(min-width: 768px)"
-                >
-                <source
-                srcset="./images/hero/hero-2-mob.png 1x, ./images/hero/hero-2-mob-2x.png 2x"
+    <div class="hero__img-wrap">
+        <picture>
+            <source srcset="./images/hero/dots-desktop.png 1x" media="(min-width: 1200px)">
+            <source srcset="./images/hero/dots-tablet.png 1x" media="(min-width: 768px)">
+            <source srcset="./images/hero/dots-mobile.png 1x" media="(max-width: 767px)">
+            <img src="./images/hero/dots-desktop.png" width="1200" height="384" alt="" class="hero__background-dots">
+        </picture>
+        <picture>
+            <source srcset="./images/hero/hero-2.png 1x, ./images/hero/hero-2-2x.png 2x" media="(min-width: 1200px)">
+            <source srcset="./images/hero/hero-2-tab.png 1x, ./images/hero/hero-2-tab-2x.png 2x"
+                media="(min-width: 768px)">
+            <source srcset="./images/hero/hero-2-mob.png 1x, ./images/hero/hero-2-mob-2x.png 2x"
                 media="(max-width: 767px)">
-                <img srcset="./images/hero/hero-2-mob.png, ./images/hero/hero-2-mob-2x.png, ./images/hero/hero-2-tab.png, ./images/hero/hero-2-tab-2x.png, ./images/hero/hero-2.png, ./images/hero/hero-2-2x.png" alt="" width="177" height="auto" class="hero__img-three-balls">
-            </picture>
-        </div>
+            <img srcset="./images/hero/hero-2-mob.png, ./images/hero/hero-2-mob-2x.png, ./images/hero/hero-2-tab.png, ./images/hero/hero-2-tab-2x.png, ./images/hero/hero-2.png, ./images/hero/hero-2-2x.png"
+                alt="" width="177" height="auto" class="hero__img-three-balls">
+        </picture>
+    </div>
 </section>
