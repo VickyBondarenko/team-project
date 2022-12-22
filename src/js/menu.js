@@ -2,10 +2,12 @@ let closed = 'menu is-hidden', opened = 'menu'
 let btnIcon = document.querySelectorAll('.menu-btn__icon-wrap')
 let mobileMenu = document.querySelector('.menu');
 let header = document.querySelector('.header')
+let links = document.querySelectorAll('.menu__button-link')
 
 let openBtn = document.querySelectorAll('.menu-btn')
 
-openBtn.forEach((a) =>{a.addEventListener('click', openCloseMenu)})
+openBtn.forEach((a) => { a.addEventListener('click', openCloseMenu) })
+links.forEach((a) => { a.addEventListener('click', openCloseMenu); console.log(a); })
 
 function openCloseMenu() {
   if (mobileMenu.dataset.menuClosed == 1) {
