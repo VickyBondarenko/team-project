@@ -1,10 +1,31 @@
 .gallery .container {
+    width: 100%;
     
     height: 1000px;
    position: relative;
-    background-image: url(/src/images/backgroud-2x.jpg);
+   @include mobile {
+    background-image: url(/src/images/backgroud_mob.jpg);
+    
+    @include retina {
+    background-image: url(/src/images/backgroud_mob-2x.jpg);
+    }
+   }
+   
+    @include tablet {
+        background-image: url(/src/images/background-tab.jpg);
 
+        @include retina {
+            background-image: url(/src/images/background_tab-2x.jpg);
+        }
+    }
 
+     @include desktop {
+    background-image: url(/src/images/backgroud.jpg);
+
+    @include retina {
+        background-image: url(/src/images/backgroud-2x.jpg);
+    }
+    }   
         
 }
 
@@ -49,13 +70,15 @@
 // .customer-reviews__wrap {
 
 
-.customer-reviews__list {
+.customer-reviews__list.swiper-wrapper {
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding-bottom: 65px;
+    padding-bottom: 100px;
 
     @include tablet {
         flex-direction: row;
@@ -64,6 +87,7 @@
 }
 
 .customer-reviews__item {
+    outline: 1px solid red;
 
     display: flex;
     flex-direction: column;
@@ -75,6 +99,7 @@
 }
 
 .customer-reviews__text-box {
+    margin: o auto;
     width: 600px;
     padding: 0 20;
     border-radius: 10px;
