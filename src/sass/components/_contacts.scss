@@ -1,9 +1,42 @@
-.contscts{
+.contacts{
+    position: relative;
     padding-bottom: 60px;
-    
+    padding-top: 500px;
+    @include tablet{
+    padding-bottom: 40px;
+    }
+    @include desktop{
+    padding-bottom: 120px;
+    }
 }
 
-.contscts__list { 
+.container-contacts{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -50px;
+    width: 100%;
+    padding: 0 21px;
+    margin: auto;
+    @include mobile{
+        width: 480px;
+    }
+    @include tablet{
+        width: 768px;
+        padding: 0 32px;
+    } 
+    @include desktop {
+        width: 1200px;
+        padding: 0 16px;
+        }
+
+
+
+    // top: 0;
+    // transform: translate(-50%, -50%);
+}
+
+.contacts__list { 
     display: flex;
     flex-wrap: wrap;
 }
@@ -11,6 +44,7 @@
 .contacts__item {
     background-color: #FCFCFC;
     width: 100%;
+    // height: 412px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     margin: 0 auto;
@@ -21,6 +55,7 @@
         @include calc (3, 16px);
         padding: 40px 24px;
         margin-bottom: 40px;
+        width: 224px;
     }
     @include desktop {
         @include calc (3, 32px);
@@ -52,7 +87,6 @@
     display: block;
     @include font(500, 12px, 1.8, 0.04em);
     margin-bottom: 8px;
-    // width: 190px;
     @include tablet {
         @include font(500, 14px, 1.8, 0.04em);
         margin-bottom: 12px;
@@ -82,7 +116,7 @@
     text-decoration: underline
 }
 
-.contscts__list-schedule {
+.contacts__list-schedule {
     display: flex;
     gap: 8px;
     flex-direction: column;
@@ -93,9 +127,9 @@
     }
 }
 
-.contscts__item-schedule {}
+.contacts__item-schedule {}
 
-.contscts__schedule-subtitle {
+.contacts__schedule-subtitle {
     @include font(500, 12px, 1.8, null);
     @include tablet {
         @include font(500, 14px, 1.8, null);
@@ -105,7 +139,7 @@
     }
 }
 
-.contscts__schedule-text {
+.contacts__schedule-text {
     @include font(500, 12px, 1.8, null);
     color: var(--btn-disabled-color);
     @include tablet {
@@ -116,7 +150,7 @@
     }
 }
 
-.contscts__list-contact {
+.contacts__list-contact {
     display: flex;
     gap: 6px;
     flex-direction: column;
@@ -133,9 +167,9 @@
     }
 }
 
-.contscts__item-contact {}
+.contacts__item-contact {}
 
-.contscts__link-contact {
+.contacts__link-contact {
     display: block;
     @include font(500, 12px, 1.6, null);
     color: var(--dark-text-color);
@@ -147,14 +181,13 @@
     }
 }
 
-.contscts__btn-wrap{
+.contacts__btn-wrap{
     @include tablet{
-        // display: flex;
-        // flex-wrap: wrap;
-    }
+        text-align: center;
+}
 }
 
-.contscts__btn-locations{
+.contacts__btn-locations{
     margin-bottom: 16px;
     display: flex;
     align-items: center;
@@ -163,11 +196,13 @@
     margin-left: auto;
     margin-right: auto;
     @include tablet {
-        // display: inline-block;
+        display: inline-block;
+        margin-right: 16px;
+        margin-bottom: 0;
     }
 }
 
-.contscts__btn-franchise{
+.contacts__btn-franchise{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,15 +210,14 @@
     margin-left: auto;
     margin-right: auto;
     @include tablet {
-        // display: inline-block;
+        display: inline-block;
     }
 }
 
-// .contscts__btn-franchise:focus + .contacts__btn-icon:focus {
-//     fill: #ffffff;
-// }
+.contacts__btn-franchise:hover, .contacts__btn-icon:hover{
+    fill: #FCFCFC;
+}
 
 .contacts__btn-icon{
-    margin-left: 6px;
-    @include tablet {}
+    margin-left: 7px;
 }
