@@ -1,7 +1,7 @@
 <header class="header" id="header">
     <div class="container header-container">
         <div class="top-header">
-            <img srcset="./images/hero/logo.png, ./images/hero/logo-2x.png" class="logo" src="./images/hero/logo.png" alt="ice cream logo">
+            <img srcset="./images/hero/logo.png 1x, ./images/hero/logo-2x.png 2x" class="logo" src="./images/hero/logo.png" alt="ice cream logo">
             <ul class="header__nav">
                 <li class="nav__item"><a class="nav__link" href="#header">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#how-its-made">How it's made?</a></li>
@@ -9,16 +9,16 @@
                 <li class="nav__item"><a class="nav__link" href="#contacts">Contact</a></li>
             </ul>
             <button type="button" class="menu-btn">
-                <div class="menu-btn__icon-wrap">
+                <span class="menu-btn__icon-wrap">
                     <svg  class="menu-btn__icon" width="32" height="32">
                         <use href="./images/icons.svg#icon-eva_menu-fill"></use>
                     </svg>
-                </div>
-                <div class="menu-btn__icon-wrap visually-hidden">
+                </span>
+                <span class="menu-btn__icon-wrap visually-hidden">
                     <svg class="menu-btn__icon" width="32" height="32">
                         <use href="./images/icons.svg#icon-ep_close"></use>
                     </svg>
-                </div>
+                </span>
             </button>
             <button type="button" class="buy-btn not-on-mobile">
                 Buy now
@@ -62,7 +62,11 @@
             <li class="link-list__item"><a class="link-list__how-link" href="#how-its-made">How it's made?</a></li>
         </ul>
         <div class="not-on-mobile hero__description">
-            <img srcset="./images/hero/hero-1-tab.png, ./images/hero/hero-1-tab-2x.png, ./images/hero/hero-1.png, ./images/hero/hero-1-2x.png" alt="" class="hero__img-plate">
+            <picture>
+                <source srcset="./images/hero/hero-1.png 1x, ./images/hero/hero-1-2x.png 2x" media="(min-width:1200px)">
+                <source srcset="./images/hero/hero-1-tab.png 1x, ./images/hero/hero-1-tab-2x.png 2x" media="(min-width:768px)">
+                <img src="./images/hero/hero-1-tab.png" alt="plate with ice cream" class="hero__img-plate">
+            </picture>
             <div class="paragraph-with-arrow">
                 <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 <svg class="hero__arrow" width="40" height="16">
@@ -76,7 +80,7 @@
                 <source srcset="./images/hero/dots-desktop.png 1x" media="(min-width: 1200px)">
                 <source srcset="./images/hero/dots-tablet.png 1x" media="(min-width: 768px)">
                 <source srcset="./images/hero/dots-mobile.png 1x" media="(max-width: 767px)">
-                <img src="./images/hero/dots-desktop.png" width="1200" height="384" alt="" class="hero__background-dots">
+                <img src="./images/hero/dots-desktop.png" width="1200" height="384" alt="background dots" class="hero__background-dots">
             </picture>
             <picture>
                 <source
@@ -90,7 +94,7 @@
                 <source
                 srcset="./images/hero/hero-2-mob.png 1x, ./images/hero/hero-2-mob-2x.png 2x"
                 media="(max-width: 767px)">
-                <img srcset="./images/hero/hero-2-mob.png, ./images/hero/hero-2-mob-2x.png, ./images/hero/hero-2-tab.png, ./images/hero/hero-2-tab-2x.png, ./images/hero/hero-2.png, ./images/hero/hero-2-2x.png" alt="" width="177" height="auto" class="hero__img-three-balls">
+                <img src="./images/hero/hero-2-mob.png" alt="ice cream with three balls" width="177" class="hero__img-three-balls">
             </picture>
         </div>
 </section>
