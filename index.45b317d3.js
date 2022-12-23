@@ -1,0 +1,2 @@
+!function(){var t={openModalList:document.querySelectorAll("[data-product-modal-open]"),closeModalBtn:document.querySelector("[data-product-modal-close]"),modal:document.querySelector("[data-product-modal]")},e=!0,o=!1,l=void 0;try{for(var d,a=t.openModalList[Symbol.iterator]();!(e=(d=a.next()).done);e=!0)item=d.value,item.addEventListener("click",n)}catch(t){o=!0,l=t}finally{try{e||null==a.return||a.return()}finally{if(o)throw l}}function n(){t.modal.classList.toggle("is-hidden")}t.closeModalBtn.addEventListener("click",n)}();
+//# sourceMappingURL=index.45b317d3.js.map
