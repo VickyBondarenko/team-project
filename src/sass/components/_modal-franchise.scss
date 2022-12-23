@@ -80,9 +80,6 @@
   text-align: center;
 }
 
-.modal-franchise-label {
-}
-
 .modal-franchise-input {
   text-indent: 12px;
   height: 32px;
@@ -117,6 +114,7 @@
   width: 100%;
   margin-bottom: 24px;
   outline: none;
+  resize: none;
   @include tablet {
     height: 84px;
     width: 368px;
