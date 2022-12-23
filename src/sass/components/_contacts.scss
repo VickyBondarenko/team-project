@@ -59,7 +59,7 @@
     display: inline-block;
     @include font(500, 12px, 1.2, 0.04em);
     padding: 4px 22px;
-    background: #F8D24E;
+    background: var(--brend-color);
     border-radius: 4px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -172,6 +172,10 @@
     }
 }
 
+.contacts__link-contact:hover{
+    color: var(--btn-disabled-color);
+}
+
 .contacts__btn-wrap{
     @include tablet{
         text-align: center;
@@ -190,6 +194,7 @@
         display: inline-block;
         margin-right: 16px;
         margin-bottom: 0;
+        border-radius: 8px;
     }
 }
 

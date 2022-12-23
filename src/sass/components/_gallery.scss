@@ -144,6 +144,7 @@
 
 
 .customer-reviews__text {
+text-align: center;
 color: var(--light-text-color);
 padding: 30px;
 @include font (400, 12, 2.25, nole);
