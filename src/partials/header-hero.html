@@ -20,7 +20,7 @@
                     </svg>
                 </span>
             </button>
-            <button type="button" class="buy-btn not-on-mobile">
+            <button type="button" class="buy-btn not-on-mobile" data-product-modal-open>
                 Buy now
                 <svg class="btn-buy__arrow-icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-arrow-button"></use>
@@ -37,7 +37,7 @@
                 <li class="menu__item"><a class="menu__link menu__button-link" href="#products">Products</a></li>
                 <li class="menu__item"><a class="menu__link menu__button-link" href="#contacts">Contact</a></li>
             </ul>
-            <button type="button" class="buy-btn">Buy now
+            <button type="button" class="buy-btn" data-product-modal-open="">Buy now
                 <svg class="btn-buy__arrow-icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-arrow-button"></use>
                 </svg>
@@ -65,13 +65,15 @@
             <picture>
                 <source srcset="./images/hero/hero-1.png 1x, ./images/hero/hero-1-2x.png 2x" media="(min-width:1200px)">
                 <source srcset="./images/hero/hero-1-tab.png 1x, ./images/hero/hero-1-tab-2x.png 2x" media="(min-width:768px)">
-                <img src="./images/hero/hero-1-tab.png" alt="plate with ice cream" class="hero__img-plate">
+                <img src="./images/hero/hero-1-tab.png" alt="plate with ice cream" class="hero__img-plate animate__animated animate__bounceInLeft">
             </picture>
             <div class="paragraph-with-arrow">
                 <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <svg class="hero__arrow" width="40" height="16">
-                    <use href="./images/icons.svg#icon-arrow"></use>
-                </svg>
+                <a class="hero_link" href="#how-its-made">
+                    <svg class="hero__arrow" width="40" height="16">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
@@ -94,7 +96,7 @@
                 <source
                 srcset="./images/hero/hero-2-mob.png 1x, ./images/hero/hero-2-mob-2x.png 2x"
                 media="(max-width: 767px)">
-                <img src="./images/hero/hero-2-mob.png" alt="ice cream with three balls" width="177" class="hero__img-three-balls">
+                <img src="./images/hero/hero-2-mob.png" alt="ice cream with three balls" width="177" class="hero__img-three-balls animate__animated animate__bounceInRight">
             </picture>
         </div>
 </section>
