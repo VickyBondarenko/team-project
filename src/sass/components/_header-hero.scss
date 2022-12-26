@@ -1,6 +1,6 @@
 .header-container{
-    width: 100%;
-    background-color: var(--primery-background-color    );
+    width: 100vw;
+    background-color: var(--primery-background-color);
 }
 
 .logo{
@@ -27,6 +27,7 @@
 
 .header {
     width: 100%;
+    height: 85px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +35,7 @@
     padding: 0;
     top: 0;
     overflow-y: hidden;
-    z-index: 30;
+    z-index: 50;
     background: var(--primery-background-color);
 }
 
@@ -190,28 +191,24 @@
     fill: var(--light-text-color);
 }
 
+.menu__link.dark {
+    color: var(--dark-text-color)
+}
+
 .menu__link{
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
     color: var(--light-text-color);
-}
-
-.menu__button-link{
-    width: fit-content;
-    height: fit-content;
-    background: transparent;
-    border: transparent;
-    padding: 0;
-}
-
-.menu__link.dark{
-    color: var(--dark-text-color)
+    &:hover {
+        color: var(--brend-color);
+    }
 }
 
 .hero {
     width: 100%;
     padding-top: 38px;
+    margin-top: 85px;
     background: rgba(132, 161, 120, 1);
     @include tablet{
         padding-top: 1px;
@@ -250,6 +247,10 @@
         line-height: 48px;
         width: 367px;
     }
+}
+
+.hero_link:hover .hero__arrow{
+    fill: var(--brend-color);
 }
 
 .link-list{

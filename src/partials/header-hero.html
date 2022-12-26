@@ -1,10 +1,7 @@
 <header class="header" id="header">
     <div class="container header-container">
         <div class="top-header">
-
             <img srcset="./images/hero/logo.png 1x, ./images/hero/logo-2x.png 2x" class="logo" src="./images/hero/logo.png" alt="ice cream logo">
-
-
             <ul class="header__nav">
                 <li class="nav__item"><a class="nav__link" href="#header">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#how-its-made">How it's made?</a></li>
@@ -12,10 +9,8 @@
                 <li class="nav__item"><a class="nav__link" href="#contacts">Contact</a></li>
             </ul>
             <button type="button" class="menu-btn">
-
                 <span class="menu-btn__icon-wrap">
                     <svg  class="menu-btn__icon" width="32" height="32">
-
                         <use href="./images/icons.svg#icon-eva_menu-fill"></use>
                     </svg>
                 </span>
@@ -37,16 +32,12 @@
     <div class="menu is-hidden" data-menu-closed="1">
         <div class="container menu__container">
             <ul class="menu__list">
-                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link"
-                            href="#header">Home</a></button></li>
-                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link dark"
-                            href="#how-its-made">How it's made?</a></button></li>
-                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link"
-                            href="#products">Products</a></button></li>
-                <li class="menu__item"><button type="button" class="menu__button-link"><a class="menu__link"
-                            href="#contacts">Contact</a></button></li>
+                <li class="menu__item"><a class="menu__link menu__button-link" href="#header">Home</a></li>
+                <li class="menu__item"><a class="menu__link dark menu__button-link" href="#how-its-made">How it's made?</a></li>
+                <li class="menu__item"><a class="menu__link menu__button-link" href="#products">Products</a></li>
+                <li class="menu__item"><a class="menu__link menu__button-link" href="#contacts">Contact</a></li>
             </ul>
-            <button type="button" class="buy-btn" data-product-modal-open>Buy now
+            <button type="button" class="buy-btn" data-product-modal-open="">Buy now
                 <svg class="btn-buy__arrow-icon" width="12" height="12">
                     <use href="./images/icons.svg#icon-arrow-button"></use>
                 </svg>
@@ -71,23 +62,21 @@
             <li class="link-list__item"><a class="link-list__how-link" href="#how-its-made">How it's made?</a></li>
         </ul>
         <div class="not-on-mobile hero__description">
-
             <picture>
                 <source srcset="./images/hero/hero-1.png 1x, ./images/hero/hero-1-2x.png 2x" media="(min-width:1200px)">
                 <source srcset="./images/hero/hero-1-tab.png 1x, ./images/hero/hero-1-tab-2x.png 2x" media="(min-width:768px)">
                 <img src="./images/hero/hero-1-tab.png" alt="plate with ice cream" class="hero__img-plate animate__animated animate__bounceInLeft">
             </picture>
-            
             <div class="paragraph-with-arrow">
-                <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et</p>
-                <svg class="hero__arrow" width="40" height="16">
-                    <use href="./images/icons.svg#icon-arrow"></use>
-                </svg>
+                <p class="hero__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <a class="hero_link" href="#how-its-made">
+                    <svg class="hero__arrow" width="40" height="16">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
-
         <div class="hero__img-wrap">
             <picture>
                 <source srcset="./images/hero/dots-desktop.png 1x" media="(min-width: 1200px)">
@@ -110,5 +99,4 @@
                 <img src="./images/hero/hero-2-mob.png" alt="ice cream with three balls" width="177" class="hero__img-three-balls animate__animated animate__bounceInRight">
             </picture>
         </div>
-
 </section>
