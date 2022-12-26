@@ -190,15 +190,18 @@
     fill: var(--light-text-color);
 }
 
+.menu__link.dark {
+    color: var(--dark-text-color)
+}
+
 .menu__link{
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
     color: var(--light-text-color);
-}
-
-.menu__link.dark{
-    color: var(--dark-text-color)
+    &:hover {
+        color: var(--brend-color);
+    }
 }
 
 .hero {
