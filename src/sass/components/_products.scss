@@ -260,7 +260,10 @@
     margin: 0 auto 16px;
     width: 40px;
     height: 16px;
-
+    &:hover,
+    &focus {
+      fill: var(--light-text-color);
+    }
     @include tablet {
       margin-bottom: 12px;
     }
