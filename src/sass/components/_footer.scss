@@ -116,6 +116,9 @@
   @include desktop {
     @include font(null, 16px, null, 0.02em);
   }
+  &:hover {
+    color: var(--brend-color);
+  }
 }
 .footer__tel-link span {
   color: var(--dark-text-color);
